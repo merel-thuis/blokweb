@@ -64,10 +64,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 ![SAYE header](/images/SAYE-header.png)
-![SAYE info](/image/SAYE-info.png)
-![SAYE lookbook](/image/SAYE-lookbook.png)
-![SAYE overview](/image/SAYE-overview.png)
-![SAYE shoes](/image/SAYE-shoes.png)
+![SAYE info](/images/SAYE-info.png)
+![SAYE lookbook](/images/SAYE-lookbook.png)
+![SAYE overview](/images/SAYE-overview.png)
+![SAYE shoes](/images/SAYE-shoes.png)
 
 **Breakdown-schets(en):**
 
