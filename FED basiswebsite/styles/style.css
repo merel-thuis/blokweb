@@ -1,0 +1,178 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+* {
+    font-family: "Source Sans Pro", sans-serif;
+    margin:0;
+}
+
+img {
+    display:block;
+    width:100%;
+    margin:0;
+}
+
+ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+/*/// HEADER ///*/
+header {
+    position:sticky;
+    top:0;
+    left:0; right:0;
+    z-index:5;
+    background-color:white;
+}
+
+header p {
+    background-color:gainsboro;
+    font-size:.75em;
+    text-align: center;
+    padding: .75em;
+}
+
+header nav ul{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin:0; padding:.25em;
+    line-height: 2em;
+}
+
+nav ul li a {
+    font-family: Amer-Stand-Regular;
+}
+
+/*/// MAIN ///*/
+
+main {
+    background-image:url(/images/reforestationheader.jpeg);
+}
+
+
+.header {
+    position: relative;
+    margin:0; padding:0;
+    background-size:cover;
+}
+
+.header h2 {
+    position: absolute;
+    top:20%;
+    font-size:300%;
+    color:white;
+    letter-spacing: .05em;
+    left:1em; right:1em;
+    text-align: center;
+    z-index: 1;
+}
+
+.header h4 {
+    position: absolute;
+    top:60%;
+    color:white;
+    font-size: 100%;
+    left:1em; right:1em;
+    text-align: center;
+    z-index: 1;
+}
+
+.graphic {
+    position: relative;
+    background-color: khaki;
+    text-align: center;
+    
+}
+
+.graphic li {
+    padding:2em;
+}
+
+article {
+    position: relative;
+    padding:3em;
+}
+
+article h4 {
+    text-align: center;
+    padding:1em;
+}
+
+article p+p {
+    margin-top: .5em;
+}
+
+section {
+    text-align: center;
+    padding: 1em;
+}
+
+.countries ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3em;
+}
+
+.countries ul li {
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    color:white;
+    text-align: center;
+    width: 90%;
+    left:5%; right:5%;
+}
+
+.countries li+li {
+    margin-top: 1em;
+}
+
+.australia h3 {
+    position: absolute;
+    font-size: 2em;
+    top:2em; left:0; right:0;
+}
+
+.australia p:first-of-type {
+    position: absolute;
+    top:8em; left:0; right: 0;
+}
+
+.australia p:last-of-type {
+    position: absolute;
+    top:12em; left:0; right:0;
+}
+
+.australia button {
+    font-size:.5em;
+    width: 10em;
+    position: absolute;
+    bottom:3em; left: calc(50% - 5em); 
+    right: 0;
+    line-height: 2em;
+}
+
+div:last-of-type {
+    position: relative;
+    text-align: center;
+}
+
+div:last-of-type h4 {
+    position: absolute;
+    width:15em;
+    left: calc(50% - 7.5em);
+}
+
+
+
+
+/*/// FOOTER ///*/
