@@ -46,7 +46,6 @@ Na de tips van vorige keer over de background-images en door de oefeningen waar 
 | Merel | Renzo | Sietse | Zaid |
 | ----- | ----- | ------ | ---- |
 | Foto's in grid (enkele of 2 grids, mogen er meerdere grids in een pagina? Ook voor homepage straks) | Animatie hamburgermenu, talenkeuze en inloggen | Flexbox | Navigeren met een klik binnen de carousel |
-| --- | --- | --- | --- |
 | Responsiveness menu bovenin. Is dat hetzelfde als oefening mediaqueries icm humpty? |  | Mijn hamburgermenu |   |
 | Stylesheet voor meerdere pagina's als je geen classes gebruikt, hoe doe je dat slim? |  |  |  |
 
