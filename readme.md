@@ -37,14 +37,14 @@ Na de tips van vorige keer over de background-images en door de oefeningen waar 
 
 -screenshot(s) van hoe ver je bent-
 
-![Header afbeelding met background-image en navigatiebalk met iconen](/images/screen-voortgang2-1.png)
-![infographic met background-image](/images/screen-voortgang2-2.png)
-![lopende teksten](/images/screen-voortgang2-3.png)
-![Nog wat werk te doen bij de landen, moet nog in een grid](/images/screen-voortgang2-4.png)
+![Header afbeelding met background-image en navigatiebalk met iconen](images/screen-voortgang2-1.png)
+![infographic met background-image](images/screen-voortgang2-2.png)
+![lopende teksten](images/screen-voortgang2-3.png)
+![Nog wat werk te doen bij de landen, moet nog in een grid](images/screen-voortgang2-4.png)
 
 ### Agenda voor meeting 2
 
-![Planning](/images/planning-voortgang2.jpeg)
+![Planning](images/planning-voortgang2.jpeg)
 
 ### Verslag van meeting 2
 
