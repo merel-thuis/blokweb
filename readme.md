@@ -36,10 +36,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 Na de tips van vorige keer over de background-images en door de oefeningen waar dit ook nog eens in terug kwam ging het positioneren van de afbeeldingen als background-image een stuk beter. Ook ging het maken van de navigatiebalk ook best goed, de iconen links moeten wel nog even wat minder ruimte innemen ten opzichte van het logo, dus daar moet waarschijnlijk nog een flex-grow op. Ook wil ik nog een dropdown maken, maar dan dat ie vanuit links van het scherm komt. Ik vind het nog wel lastig om de teksten op de background images zo te plaatsen dat ze ook responsive zijn.
 
 -screenshot(s) van hoe ver je bent-
-![Header afbeelding met background-image en navigatiebalk met iconen](/images/screen-voortgang2-1.png)
-![infographic met background-image](/images/screen-voortgang2-2.png)
-![lopende teksten](/images/screen-voortgang2-3.png)
-![Nog wat werk te doen bij de landen, moet nog in een grid](/images/screen-voortgang2-4.png)
+![Header afbeelding met background-image en navigatiebalk met iconen](images/screen-voortgang2-1.png)
+![infographic met background-image](images/screen-voortgang2-2.png)
+![lopende teksten](images/screen-voortgang2-3.png)
+![Nog wat werk te doen bij de landen, moet nog in een grid](images/screen-voortgang2-4.png)
 
 ### Agenda voor meeting 2
 
@@ -49,7 +49,7 @@ Na de tips van vorige keer over de background-images en door de oefeningen waar 
 | Responsiveness menu bovenin. Is dat hetzelfde als oefening mediaqueries icm humpty? |  | Mijn hamburgermenu |   |
 | Stylesheet voor meerdere pagina's als je geen classes gebruikt, hoe doe je dat slim? |  |  |  |
 
-![Planning](/images/planning-voortgang2.jpeg)
+![Planning](images/planning-voortgang2.jpeg)
 
 ### Verslag van meeting 2
 
