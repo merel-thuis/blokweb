@@ -24,7 +24,26 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+- dit ging goed & dit was lastig -
+Ik heb mijn header zo aangepast dat er 2 nav's zijn met het logo in het midden dmv order: -1 op de eerste nav. Ook heb ik het menu met CSS en Javascript van de zijkant laten komen. Wishlist en Shoppingcart moet nog. Ik ben verder gegaan met de footer, daar vond ik het moeilijk om de correcte ul's en li's aan te spreken. Ik krijg alleen de breedte van mn scherm niet gedebugged, dat is erg frustrerend. En de background-images van mijn socials zijn verdwenen en ik weet ook niet zo goed hoe ik die weer tevoorschijn kan toveren.
+
+-screenshot(s) van hoe ver je bent-
+![Header met menu]("images/voortgang3-1")
+![Uitgeklapt menu]("images/voortgang3-2")
+![Footer begin]("images/voortgang3-3")
+
+
+![Header afbeelding met background-image en navigatiebalk met iconen](images/screen-voortgang2-1.png)
+### Agenda voor meeting 3
+
+| Merel | Renzo | Sietse | Zaid |
+| ----- | ----- | ------ | ---- |
+| Zorgen dat body hele breedte van scherm in beslag neemt, debuggen | Inhoud van de main | Algemene netheid vragen |   |
+| In footer de juiste ul en li aanspreken, welke selectors zijn daarvoor (erg veel ul's en li's) | Javascript, de ul's op elkaar afstemmen |   |   |
+| Waarom zie je mn socials niet? |   |   |   |
+
+### Verslag van meeting 3
 
 
 
@@ -52,7 +71,10 @@ Na de tips van vorige keer over de background-images en door de oefeningen waar 
 ![Planning](images/planning-voortgang2.jpeg)
 
 ### Verslag van meeting 2
-
+Niet vergeten om te controleren of het klopt met inspecteren. Je kunt daarbij vanuit verschillende devices bekijken hoe de code eruit ziet! 
+Voor menu responsiveness inderdaad de mediaquery oefening gebruiken!
+Foto's in eenkoloms grid plaatsen en met mediaquery veranderen in tweekoloms grid waarvan de eerste twee div's 1/-1 (dus verspreid over de twee kolommen).
+Je kunt meerdere stylesheets gebruiken, maar probeer voor de 'algemene' dingen zoals de header en evt footer een algemene stylesheet te maken. Dan per pagina voor de details een andere.
 
 ## Voortgang 1 (week 3)
 
