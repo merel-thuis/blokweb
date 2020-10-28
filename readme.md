@@ -7,7 +7,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Bronnenlijst
 1. https://www.sayebrand.com/
-2. -...-
+2. https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol
 3. -...-
 
 
@@ -15,6 +15,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Eindgesprek (week 7/8)
 
 -dit ging goed & dit was lastig-
+Ik ben niet op tijd begonnen met het afronden van mijn opdracht. Hierdoor heb ik mijn tweede pagina niet helemaal af kunnen maken. Over de pagina reforestation.html ben ik wel tevreden. Ik heb goed met de responsiveness kunnen werken. Alleen de full screen in mijn webbrowser heeft nog fouten.
 
 **Screenshot(s):**
 
