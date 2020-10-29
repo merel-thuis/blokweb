@@ -282,7 +282,8 @@ article:nth-of-type(2) button:hover {
 /*/// FOOTER ///*/
 /*// Infoicons //*/
 footer .vertical {
-    width: 100%;
+    width: 50%;
+    margin-left: calc(50% - 25%);
 }
 
 footer .horizontal {
@@ -520,7 +521,7 @@ footer p.copyright {
         display:flex;
         padding:0;
         width: 100%;
-}
+    }
     
     header div nav:first-of-type li{
         flex-grow:1;
@@ -540,6 +541,40 @@ footer p.copyright {
     footer .horizontal {
         display: block;
         width: 100%;
+    }
+    
+    article:nth-of-type(2) div {
+        height: 50vh;
+    }
+    
+    article:nth-of-type(2) h4 {
+        font-size: 2.1em;
+        top: 18.2em;
+    }
+    
+    article:nth-of-type(2) p {
+        font-size: 2em;
+        top: 20.3em;
+    }
+    
+    article:nth-of-type(2) ul {
+        bottom: 4.9em;
+    }
+    
+    article:nth-of-type(2) li {
+        font-size: 1.24em;
+    }
+    
+    article:nth-of-type(2) button {
+        height: 4em;
+    }
+    
+    .video h3 {
+        top: 9em;
+    }
+    
+    .video button {
+        bottom: 17em;
     }
 }
 
