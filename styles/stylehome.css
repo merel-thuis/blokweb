@@ -192,7 +192,7 @@ article:nth-of-type(2) div {
     display: flex;
     flex-direction: column;
     position: relative;
-    min-height: 100vh;
+    min-height: 85vh;
     max-width: 30em;
     padding-left: 10px;
     padding-right: 10px;
@@ -641,7 +641,7 @@ footer p.copyright {
     }
     
     article:nth-of-type(2) div {
-        height: 50vh;
+        min-height: 90vh;
     }
     
     article:nth-of-type(2) h4 {
