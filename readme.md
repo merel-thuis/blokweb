@@ -17,6 +17,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -dit ging goed & dit was lastig-
 Ik ben niet op tijd begonnen met het afronden van mijn opdracht. Hierdoor heb ik mijn tweede pagina niet helemaal af kunnen maken. Over de pagina reforestation.html ben ik wel tevreden. Ik heb goed met de responsiveness kunnen werken. Alleen de full screen in mijn webbrowser heeft nog fouten.
 
+Ik ben tevreden met mijn eindwerk! De footer had nog wat beter gekund, maar doordat ik een stuk javascript heb gebruikt die ik niet 100% begrijp kon ik het niet naar wens aanpassen. Ik vond de werking van de javascript wel dusdanig belangrijk, dat ik heb gekozen om die erin te houden en de layout van de footer vanaf 1024px voor lief heb genomen. Het is ook niet lelijk, maar het kon wel mooier.
+
 **Screenshot(s):**
 
 -screenshot(s) van je eindresultaat-

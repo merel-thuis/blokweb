@@ -131,11 +131,19 @@ header nav:first-of-type ul li:hover {
     cursor: pointer;
 }
 
+header li a {
+    font-size: 13px;
+}
+
 /*/// MAIN ///*/
 /*// Header //*/
 
 article:first-of-type {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-image: url('../images/homeheader2.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -147,8 +155,6 @@ article:first-of-type {
 }
 
 article:first-of-type h2 {
-    position: absolute;
-    top: 20%;
     font-size: 3em;
     left: 1em; right: 1em;
     color: white;
@@ -157,73 +163,78 @@ article:first-of-type h2 {
 }
 
 article:first-of-type p {
-    position: absolute;
-    bottom: 30%;
-    left: 1em; right: 1em;
+    margin-bottom: auto;
     color:white;
+    width: 95%;
     font-size: 1.75em;
     text-align: center;
     font-weight: normal;
 }
 
 article:first-of-type button {
-    position: absolute;
-    left: calc(50% - 4.75em);
-    bottom: 15%;
     width:9.5em; height: 4.2em;
     background-color: white;
     border: none;
+    margin-bottom: auto;
 }
 
 article:first-of-type button:hover {
-    background-color: black;
-    color: white;
+    opacity: 0.6;
 }
 
 /*// Artikelen //*/
 article:nth-of-type(2) {
     display: grid;
+    margin-left: auto;
 }
 
 article:nth-of-type(2) div {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    height: 83vh;
-    width: 95%;
-    margin-left: 2.5%;
+    min-height: 100vh;
+    max-width: 30em;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 2em;
 }
 
 article:nth-of-type(2) img {
-    position: absolute;
     width: 100%;
     height: auto;
-    left: 0; right: 0;
-    top: 1%;
+}
+
+article:nth-of-type(2) div .caramel:hover {
+    content: url(../images/caramelhover.jpg);
+}
+
+article:nth-of-type(2) div .white:hover {
+    content: url(../images/whitehover.jpg);
+}
+
+article:nth-of-type(2) div .dark:hover {
+    content: url(../images/darkhover.jpg);
 }
 
 article:nth-of-type(2) h4 {
-    position: absolute;
     color: black;
     font-size: 1.2em;
     font-weight: bold;
-    top: 20em;
     line-height: 1.5em;
 }
 
 article:nth-of-type(2) p {
-    position: absolute;
     color: black;
     font-size: 1.1em;
-    top: 23em;
     line-height: 2em;
 }
 
 article:nth-of-type(2) ul {
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    bottom: 3.7em;
 }
 
 article:nth-of-type(2) li {
@@ -233,7 +244,6 @@ article:nth-of-type(2) li {
 }
 
 article:nth-of-type(2) button {
-    position: absolute;
     width: 100%;
     height: 3em;
     text-align: center;
@@ -243,8 +253,6 @@ article:nth-of-type(2) button {
     background-position: 32% center;
     border: .5px solid black;
     background-color: white;
-    left: 0; right: 0;
-    bottom: 0;
 }
 
 article:nth-of-type(2) button:hover {
@@ -279,18 +287,66 @@ article:nth-of-type(2) button:hover {
     line-height: 2em;
 }
 
-/*/// FOOTER ///*/
-/*// Infoicons //*/
-footer .vertical {
-    width: 50%;
-    margin-left: calc(50% - 25%);
+.video button:hover {
+    opacity: 0.6;
 }
 
-footer .horizontal {
-    display: none;
+/*// Infoicons //*/
+.info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+.info li {
+    position: relative;
+    min-height: 10em;
+    width: 10em;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 8em auto;
+    background-position: top center;
+}
+
+.info h4 {
+    padding-top: 6em;
+    font-size: 1.2em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.info p {
+    text-align: center;
+    padding-top: .3em;
+    font-size: .9em;
+}
+
+.info li:first-of-type {
+    background-image: url(../images/upsdeliveries.png);
+}
+
+.info li:nth-of-type(2) {
+    background-image: url('../images/worldwide.png');
+}
+
+.info li:nth-of-type(3) {
+    background-image: url('../images/sedurepayment.png');
+}
+
+.info li:last-of-type {
+    background-image: url('../images/45days.png');
+}
+
+/*/// FOOTER ///*/
 
 /*// Form //*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
 form p {
     color:darkgray;
     text-align: center;
@@ -304,7 +360,6 @@ form a {
 }
 
 input {
-    width: 95%;
     margin: 8px;
     padding:.5em;
 }
@@ -330,6 +385,12 @@ input[type="submit"] {
     letter-spacing: .1em;
 }
 
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+
 /*// FAQ //*/
 
 .FAQ li {
@@ -337,10 +398,46 @@ input[type="submit"] {
     padding:.5em;
 }
 
-.FAQ img {
-    width:7em;
-    height: 6em;
-    margin-left: 35%;
+.FAQ ul:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.FAQ ul:first-of-type li {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 4em auto;
+    height: 3em;
+    min-width: 4em;
+}
+
+.FAQ ul:first-of-type li:first-of-type {
+    background-image: url('../images/shopify.png');
+}
+
+.FAQ ul:first-of-type li:nth-of-type(2) {
+    background-image: url('../images/aes.png');
+}
+
+.FAQ ul:first-of-type li:nth-of-type(3) {
+    background-image: url('../images/paypal.png');
+}
+
+.FAQ ul:first-of-type li:nth-of-type(4) {
+    background-image: url('../images/visa.png');
+}
+
+.FAQ ul:first-of-type li:nth-of-type(5) {
+    background-image: url('../images/mastercard.png');
+}
+
+.FAQ ul:first-of-type li:nth-of-type(6) {
+    background-image: url('../images/discover.png');
+}
+
+.FAQ ul:first-of-type li:last-of-type {
+    background-image: url('../images/american%20express.png');
 }
 
 .accordion {
@@ -576,9 +673,42 @@ footer p.copyright {
     .video button {
         bottom: 17em;
     }
+    
+    form {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        margin-top: 20px;
+    }
+    
+    form p {
+        max-width: 40em;
+        text-align: left;
+        margin: 0;
+    }
+    
+    input {
+        max-height: 2.5em;
+    }
+
+    input[type="email"] {
+        margin: 0;
+        min-width: 25%;
+        
+    }
+
+    input[type="submit"] {
+        font-size: 1em;
+        padding: 0 .5em;
+        margin: 0;
+    }
 }
 
 @media (min-width: 1200px) {
+     article:nth-of-type(2) {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     
 }
 

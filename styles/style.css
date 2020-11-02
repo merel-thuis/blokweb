@@ -78,6 +78,11 @@ header div nav:first-of-type ul:first-of-type li {
     margin-left: 1em;
 }
 
+header div nav:first-of-type ul:first-of-type li:hover {
+    cursor: pointer;
+    color: gainsboro;
+}
+
 nav:first-of-type {
     order:-1
 }
@@ -131,16 +136,18 @@ header nav:nth-of-type(2) ul li {
 main div:first-of-type {
     background-image:url('../images/reforestationheader.jpeg');
     position: relative;
-    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
     width: 100%;
     margin:0; padding:0;
-    background-size:cover;
+    background-size: cover;
     word-spacing: .1em;
 }
 
 main div:first-of-type h2 {
-    position: absolute;
-    top:10%;
     font-size:3em;
     left:1em; right:1em;
     color:white;
@@ -150,13 +157,11 @@ main div:first-of-type h2 {
 }
 
 main div:first-of-type h3 {
-    position: absolute;
-    bottom:10%;
-    left:0; right:0;
     color:white;
     font-size:1.75em;
     text-align: center;
     font-weight: normal;
+    margin-bottom: auto;
 }
 
 /*/// INFOGRAPHIC ///*/
@@ -199,17 +204,14 @@ article {
     position: relative;
     padding:2em;
     display: grid;
-    /*grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1em;*/
 }
 
 article h4 {
     text-align: center;
-    padding:1em 0 2em 0;
+    padding:1em 0;
     font-weight: normal;
     font-size: 1.5em;
     word-spacing: .05em;
-    /*grid-column: span 2;*/
 }
 
 article p {
@@ -242,20 +244,17 @@ section h3 {
 }
 
 /* alle koppen in de afbeeldingen */
-.countries h3 {
-    position: absolute;
-    font-size: 3em;
-    top:1em; left:0; right:0;
-}
+
 
 .countries li {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+    justify-content: center;
+    align-items: center;
     color:white;
     text-align: center;
     width: 90%;
-    /*left:5%; right:5%;*/
+    padding: 2em;
 }
 
 /* marge tussen de li's */
@@ -266,46 +265,53 @@ section h3 {
 #australia {
     background-image: url('../images/australia.webp');
     background-position: center;
-    height: 75vh;
+    min-height: 60vh;
     width: 100%;
     position: relative;
+    transition: 0.3s;
+}
+
+#australia:hover, #amazon:hover, #india:hover, #zambia:hover {
+    transform: translatey(-5px);
+    transition: 0.3s;
+}
+
+.countries h3 {
+    font-size: 3em;
 }
 
 /* positionering paragrafen */
 .countries li:first-of-type p:first-of-type, .countries li:nth-of-type(2) p:first-of-type {
-    position: absolute;
     font-size: 1.5em;
-    top:4.5em; left:calc(50% - 40%);
+    margin-bottom: auto;
     width: 80%;
 }
 
 /* positionering paragrafen */
 .countries li:first-of-type p:last-of-type, .countries li:nth-of-type(2) p:last-of-type {
-    position: absolute;
     font-size: 1.5em;
-    bottom: 8em; left:0; right:0; 
 }
 
 /* afbeeldingen boven de buttons */
 .countries img {
     width: 6em;
-    position: absolute;
-    left:calc(50% - 3em);
-    bottom: 6em;
+    margin-bottom: auto;
+    margin-top: .5em;
 }
 
 #amazon img {
     width: 7em;
-    left:calc(50% - 3.5em);
+    margin-top: .5em;
 }
 
 
 #amazon {
     background-image: url('../images/amazon.webp');
     background-position: center;
-    height: 75vh;
+    min-height: 60vh;
     width: 100%;
     position: relative;
+    transition: 0.3s;
 }
 
 /* buttons in eerste twee afbeeldingen */
@@ -313,26 +319,28 @@ section h3 {
     font-size:.8em;
     width: 16em;
     padding:.5em;
-    position: absolute;
-    bottom:2em; left: calc(50% - 8em); 
-    right: 0;
     line-height: 2em;
+    margin-top: .5em;
+    margin-bottom: auto;
 }
 
 /* laatste twee li's */
 #india {
     background-image: url('../images/india.webp');
     background-repeat: no-repeat;
+    margin-bottom: 1em;
+    transition: 0.3s;
 }
 
 #india h3, #zambia h3 {
-    top:2em;
+    margin-top: auto;
 }
 
 #zambia {
     background-image: url('../images/zambia.webp');
     background-repeat: no-repeat;
     margin-bottom: 1em;
+    transition: 0.3s;
 }
 
 .countries li:nth-of-type(3), .countries li:last-of-type {
@@ -343,11 +351,13 @@ section h3 {
 }
 
 .countries li:nth-of-type(3) p, .countries li:last-of-type p {
-    position: absolute;
+/*    position: absolute;*/
     font-size: 1.5em;
     line-height: 2em;
+    max-width: 30em;
     width: 100%;
-    top: calc(50% - 1em);
+    margin-bottom: auto;
+/*    top: calc(50% - 1em);*/
 }
 
 /*/// WERELDKAART ///*/
@@ -369,6 +379,11 @@ main div:last-of-type h4 {
 
 /*/// FOOTER ///*/
 /*// Form //*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
 
 form p {
     color:darkgray;
@@ -383,7 +398,6 @@ form a {
 }
 
 input {
-    width: 95%;
     margin: 8px;
     padding:.5em;
 }
@@ -409,6 +423,12 @@ input[type="submit"] {
     letter-spacing: .1em;
 }
 
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+}
+
+
 /*// FAQ //*/
 
 .FAQ li {
@@ -416,10 +436,46 @@ input[type="submit"] {
     padding:.5em;
 }
 
-.FAQ img {
-    width:7em;
-    height: 6em;
-    margin-left: 35%;
+.FAQ ul:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.FAQ ul:first-of-type li {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 4em auto;
+    height: 3em;
+    min-width: 4em;
+}
+
+.FAQ ul:first-of-type li:first-of-type {
+    background-image: url('../images/shopify.png');
+}
+
+.FAQ ul:first-of-type li:nth-of-type(2) {
+    background-image: url('../images/aes.png');
+}
+
+.FAQ ul:first-of-type li:nth-of-type(3) {
+    background-image: url('../images/paypal.png');
+}
+
+.FAQ ul:first-of-type li:nth-of-type(4) {
+    background-image: url('../images/visa.png');
+}
+
+.FAQ ul:first-of-type li:nth-of-type(5) {
+    background-image: url('../images/mastercard.png');
+}
+
+.FAQ ul:first-of-type li:nth-of-type(6) {
+    background-image: url('../images/discover.png');
+}
+
+.FAQ ul:first-of-type li:last-of-type {
+    background-image: url('../images/american%20express.png');
 }
 
 .accordion {
@@ -459,7 +515,6 @@ input[type="submit"] {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-
 
 /*// Socials //*/
 
@@ -520,17 +575,17 @@ footer p.copyright {
 @media (min-width: 768px) {
     .countries {
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 5px;
+        grid-column-gap: 1.4em;
     }
     
-    #australia {
-        height: 50vh;
+    #australia, #amazon {
+        min-height: 60vh;
+        height: auto;
         grid-column: span 2;
     }
     
-    #amazon {
-        height: 50vh;
-        grid-column: span 2;
+    #india, #zambia {
+        min-height: 25em;
     }
     
     .countries li:first-of-type p:first-of-type, .countries li:nth-of-type(2) p:first-of-type {
@@ -541,7 +596,8 @@ footer p.copyright {
     }
     
     .countries li:nth-of-type(3), .countries li:last-of-type {
-        height: 30vh;
+        min-height: 30vh;
+        height: auto;
     }
     
     div:nth-of-type(2) ul{
@@ -633,6 +689,10 @@ footer p.copyright {
         height: 35vh;
 }
     
+    #india, #zambia {
+        min-height: 30em;
+    }
+    
     main div:last-of-type h4 {
         font-size: 3em;
 }
@@ -656,7 +716,36 @@ footer p.copyright {
     
     nav:first-of-type {
         order:0;    
-}   
+    } 
+    
+    form {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        margin-top: 20px;
+    }
+    
+    form p {
+        max-width: 40em;
+        text-align: left;
+        margin: 0;
+    }
+    
+    input {
+        max-height: 2.5em;
+    }
+
+    input[type="email"] {
+        margin: 0;
+        min-width: 25%;
+        
+    }
+
+    input[type="submit"] {
+        font-size: 1em;
+        padding: 0 .5em;
+        margin: 0;
+    }
 }
 
 @media (min-width: 1500px) {
